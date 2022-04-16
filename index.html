@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang=ko dir="ltr">
+  <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2573537627569590" crossorigin="anonymous"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta class="author" content="song">
+    <meta class="keywords" content="Juny MBTI">
+    <meta class="description" content="Juny MBTI">
+
+    <meta property="og:url" content="https://junymbti.netlify.app"/>
+    <meta property="og:title" content="Juny MBTI"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:img" content="img/share.png"/>
+    <meta property="og:description" content="상황으로 알아보는 MBTI"/>
+    <link rel="shortcut icon" href="img/logo.ico">
+    <link rel="apple-touch-icon-precomposed" href="img/logo.ico">
+    <title>상황으로 알아보는 MBTI</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script>
+      Kakao.init('0165a303d4ebe35198fd56bf259fe362');
+      Kakao.isInitialized();
+    </script>
+
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/qna.css">
+    <link rel="stylesheet" href="./css/result.css">
+    <link rel="stylesheet" href="./css/animation.css">
+  </head>
+
+
+  <body>
+    <div class="container">
+      <section id="main" class="mx-auto mt-5 py-5 px-3">
+        <h1>상황으로 알아보는 나의 MBTI</h1>
+        <div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+          <img src="./img/main.png" alt="mainImage" class="img-fluid my-3" height="300" width="300">
+
+        </div>
+        <p style='font-size:25px;'>
+          여러가지 상황으로 알아보는 MBTI입니다!<br>
+          아래 성별에 맞는 버튼을 눌러 검사를 시작하세요.
+        </p>
+        <div id="tagArea" style='font-size:15px;'></div>
+        <button id="maleStartButton" type="button" class="btn btn-outline-primary mt-3 mx-2 px-4 py-2 startButton" onclick="js:beginMale()">남자</button>
+        <button id="femaleStartButton" type="button" class="btn btn-outline-primary mt-3 mx-2 px-4 py-2 startButton" onclick="js:beginFemale()">여자</button>
+        <!--<div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2573537627569590" crossorigin="anonymous">
+            </script>
+              <ins class="adsbygoogle col-lg-6 col-md-8 col-sm-10 col-12 mx-auto" style="display:inline-block; min-width:400px;max-width:970px;width:100%;height:90px; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2573537627569590" data-ad-slot="2851536225"></ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>-->
+      </section>
+
+      <section id="qna">
+        <div class="status mx-auto mt-5">
+          <div class="statusBar">
+
+          </div>
+        </div>
+        <div class="qBox my-5 py-3 mx-auto">
+
+        </div>
+        <div class="answerBox">
+
+        </div>
+        <!--<div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2573537627569590" crossorigin="anonymous">
+            </script>
+              <ins class="adsbygoogle col-lg-6 col-md-8 col-sm-10 col-12 mx-auto" style="display:inline-block; min-width:400px;max-width:970px;width:100%;height:90px; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2573537627569590" data-ad-slot="2851536225"></ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>-->
+      </section>
+
+      <section id="result" class="mx-auto mt-5 py-5 px-3">
+        <h1>당신의 MBTI는?</h1>
+        <div class="resultName">
+
+        </div>
+        <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+
+        </div>
+        <div class="resultDesc">
+
+        </div>
+        <script type="text/javascript">
+          function retry(){
+            location.href="/index.html";
+          }
+        </script>
+        <button type="button" class="btn btn-outline-warning mt-3 mx-1 px-4 py-2 kakao" onclick="js:setShare()">공유하기</button>
+        <button type="button" class="btn btn-outline-primary mt-3 mx-1 px-4 py-2 retry" onclick="js:retry()">다시하기</button>
+      </section>
+
+      <script src="./js/data.js" charset="utf-8"></script>
+      <script src="./js/start.js" charset="utf-8"></script>
+      <script src="./js/share.js" content="utf-8"></script>
+
+      <!--<div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2573537627569590" crossorigin="anonymous">
+        </script>
+          <ins class="adsbygoogle col-lg-6 col-md-8 col-sm-10 col-12 mx-auto" style="display:inline-block; min-width:400px;max-width:970px;width:100%;height:90px; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2573537627569590" data-ad-slot="2851536225"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>-->
+    </div>
+  </body>
+
+</html>

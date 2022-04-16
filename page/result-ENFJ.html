@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang=ko dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta class="author" content="song">
+    <meta class="keywords" content="Juny MBTI">
+    <meta class="description" content="Juny MBTI">
+
+    <meta property="og:url" content="https://junymbti.netlify.app"/>
+    <meta property="og:title" content="Juny MBTI"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:img" content="../img/share.png"/>
+    <meta property="og:description" content="상황으로 알아보는 MBTI"/>
+    <link rel="shortcut icon" href="img/logo.ico">
+    <link rel="apple-touch-icon-precomposed" href="img/logo.ico">
+    <title>상황으로 알아보는 MBTI</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/result.css">
+  </head>
+  <body>
+    <section id="shareResult" class="mx-auto mt-5 py-5 px-3">
+      <h1>당신의 MBTI는?</h1>
+      <div class="resultName">
+        <p>'ENFJ' 언변능숙형</p>
+      </div>
+      <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+        <img src="../img/image-ENFJ.png" alt="0" class="img-fluid">
+      </div>
+      <div class="resultDesc">
+        <p>타인의 성장을 도모하고 협동하는 사람들.<br><br>따뜻하고 적극적이며 책임감이 강하고 사교성이 풍부하고 동정심이 많다. 민첩하고 동정심이 많고 사교적이며 인화를 중요시하고 참을성이 많다. 다른 사람들의 생각이나 의견에 진지한 관심을 가지고 공동선을 위하여 다른 사람의 의견에 대체로 동의한다. 때로 다른 사람들의 좋은 점을 지나치게 이상화하고 맹목적 충성을 보이는 경향이 있으며 다른 사람들에 대해서도 자기와 같을 것이라고 생각하는 경향이 있다.<br><br>현재보다는 미래의 가능성을 추구하며 편안하고 능란하게 계획을 제시하고 집단을 이끌어 가는 능력이 있어 사람을 다루는 분야, 즉 교직, 성직, 심리 상담 치료, 예술, 문학, 외교, 판매 등에 적합하다.</p>
+      </div>
+      <script type="text/javascript">
+        function shareTest(){
+          location.href="/index.html";
+        }
+      </script>
+      <button type="button" class="btn btn-outline-primary mt-3 px-4 py-2 retry" onclick="js:shareTest()">검사하기</button>
+  </body>
+</html>
